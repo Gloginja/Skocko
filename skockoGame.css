@@ -1,0 +1,24 @@
+body {
+    background-image: url("rsc/Images/background2game.jpg");
+}
+
+.col-sm-12 img {
+    width: 70px;
+    height: 70px;
+}
+
+.col-sm-6 img {
+    width: 70px;
+    height: 70px;
+}
+
+.row 
+{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#row7
+{
+    margin-left: 133px;
+}

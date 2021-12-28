@@ -6,10 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="skockoGame.css">
     <link rel="shortcut icon" type="image/x-icon" href="rsc/Images/Icon.ico" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="skockoGame.js"></script>
     <title>Skocko</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row" id="row0">
+            <div class="col-sm-12">
+                <img id="field00" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field01"src="rsc/Images/empty.png" onclick="deleteField(this)"> 
+                <img id="field02"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field03"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try0" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield00" src="rsc/Images/emptyTry.png">
+                <img id="tryfield01" src="rsc/Images/emptyTry.png">
+                <img id="tryfield02" src="rsc/Images/emptyTry.png">
+                <img id="tryfield03" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row1">
+            <div class="col-sm-12">
+                <img id="field10" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field11"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field12"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field13"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try1" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield10" src="rsc/Images/emptyTry.png">
+                <img id="tryfield11" src="rsc/Images/emptyTry.png">
+                <img id="tryfield12" src="rsc/Images/emptyTry.png">
+                <img id="tryfield13" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-sm-12">
+                <img id="field20" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field21"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field22"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field23"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try2" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield20" src="rsc/Images/emptyTry.png">
+                <img id="tryfield21" src="rsc/Images/emptyTry.png">
+                <img id="tryfield22" src="rsc/Images/emptyTry.png">
+                <img id="tryfield23" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row3">
+            <div class="col-sm-12">
+                <img id="field30" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field31"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field32"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field33"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try3" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield30" src="rsc/Images/emptyTry.png">
+                <img id="tryfield31" src="rsc/Images/emptyTry.png">
+                <img id="tryfield32" src="rsc/Images/emptyTry.png">
+                <img id="tryfield33" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row4">
+            <div class="col-sm-12">
+                <img id="field40" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field41"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field42"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field43"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try4" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield40" src="rsc/Images/emptyTry.png">
+                <img id="tryfield41" src="rsc/Images/emptyTry.png">
+                <img id="tryfield42" src="rsc/Images/emptyTry.png">
+                <img id="tryfield43" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row5">
+            <div class="col-sm-12">
+                <img id="field50" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field51"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field52"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field53"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try5" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield50" src="rsc/Images/emptyTry.png">
+                <img id="tryfield51" src="rsc/Images/emptyTry.png">
+                <img id="tryfield52" src="rsc/Images/emptyTry.png">
+                <img id="tryfield53" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row6">
+            <div class="col-sm-12">
+                <img id="field60" src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field61"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field62"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="field63"src="rsc/Images/empty.png" onclick="deleteField(this)">
+                <img id="try1" src="rsc/Images/try.png" onclick="tryCombination(this)">
+                <img id="tryfield60" src="rsc/Images/emptyTry.png">
+                <img id="tryfield61" src="rsc/Images/emptyTry.png">
+                <img id="tryfield62" src="rsc/Images/emptyTry.png">
+                <img id="tryfield63" src="rsc/Images/emptyTry.png">
+            </div>
+        </div>
+        <div class="row" id="row7">
+            <div class="col-sm-12">
+                <img id="result0" src="rsc/Images/empty.png">
+                <img id="result1" src="rsc/Images/empty.png">
+                <img id="result2" src="rsc/Images/empty.png">
+                <img id="result3" src="rsc/Images/empty.png">
+                <img src="rsc/Images/emptySpace.png">
+                <img id="skocko" src="rsc/Images/skocko.png" onclick="add(this)">
+                <img id="club" src="rsc/Images/club.png" onclick="add(this)">
+                <img id="ace" src="rsc/Images/ace.png" onclick="add(this)">
+                <img id="heart" src="rsc/Images/heart.png" onclick="add(this)">
+                <img id="diamonds" src="rsc/Images/diamonds.png" onclick="add(this)">
+                <img id="star" src="rsc/Images/star.png" onclick="add(this)">
+            </div>  
+        </div>
+    </div>
 </body>
 </html>
